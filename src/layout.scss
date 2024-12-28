@@ -1,0 +1,42 @@
+
+@use"./breakpoints.scss" as bp;
+
+.layout{
+  
+    height:100vh;
+    //Resolve it (later)
+    max-width:1366px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px;
+    display: flex;
+    flex-direction:column;
+
+
+
+@include bp.respond-to(lg){
+    background-color:rgb(238, 211, 201) ;
+    max-width: 1280px;
+}
+
+@include bp.respond-to(md){
+    background-color:rgb(187, 201, 227) ;
+    max-width: 768px;
+}
+
+@include bp.respond-to(sm){
+    background-color:rgb(241, 208, 208) ;
+    max: width 640px; ;
+}
+
+.content{
+   flex: 1;
+
+}
+
+}
+
+
+
+
